@@ -1,13 +1,13 @@
 # Composer template for Drupal projects
 
-[![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
+Este repositorio corresponde al proyecto final del curso Drupal 8. Tiene la intención de ser un sitio web en donde los usuarios puedan subir información relacionada con el CMS. (Aún esta en proceso)
 
-This project template provides a starter kit for managing your site
-dependencies with [Composer](https://getcomposer.org/).
+Los reponsables son: Valeria, Adolfo, Fernando
 
-If you want to know how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/8.x/docs/make.md) visit
-the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
+
+## Uso
+
+
 
 ## Usage
 
