@@ -1,0 +1,90 @@
+uuid: 4db53bb8-b8e8-405f-98ca-4ef776cd38c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_entity_browser
+    - field.field.node.post.body
+    - field.field.node.post.comment
+    - field.field.node.post.field_categories1
+    - field.field.node.post.field_images
+    - field.field.node.post.field_key_words
+    - field.field.node.post.field_related_links
+    - node.type.post
+  module:
+    - comment
+    - entity_browser
+    - link
+    - text
+id: node.post.default
+targetEntityType: node
+bundle: post
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      placeholder: ''
+      summary_rows: 3
+    third_party_settings: {  }
+    region: content
+  comment:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_categories1:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_images:
+    type: entity_browser_entity_reference
+    weight: 2
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+    region: content
+  field_key_words:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_related_links:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
