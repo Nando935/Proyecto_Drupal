@@ -20,11 +20,7 @@ ddev composer install
 
 #Install site using existing config:
 
-ddev exec drush si --db-url=mysql://db:db@db/db --config-dir=../config/sync
-
-#Import config
-
-ddev exec drush cim -y
+ddev exec drush si --db-url=mysql://db:db@db/db --existing-config
 
 #Import default content:
 
