@@ -1,0 +1,22 @@
+uuid: 0b5eb783-2e6b-4f22-b453-bbc5b9208eb0
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - nerv
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: nerv_messages
+theme: nerv
+region: header
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

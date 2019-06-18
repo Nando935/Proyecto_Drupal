@@ -1,0 +1,33 @@
+uuid: 2d45f897-1147-4020-a8a7-608d816aa895
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_posts
+  module:
+    - node
+    - views
+  theme:
+    - radix
+id: radix_views_block__related_posts_block_1
+theme: radix
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:related_posts-block_1'
+settings:
+  id: 'views_block:related_posts-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      post: post
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

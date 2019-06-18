@@ -1,0 +1,69 @@
+uuid: de490d0a-e36f-4f3f-ad25-fd249d3e4c4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.user.field_b
+    - field.field.taxonomy_term.user.field_body1
+    - field.field.taxonomy_term.user.field_body3
+    - field.field.taxonomy_term.user.field_p
+    - field.field.taxonomy_term.user.field_profile_pic
+    - field.field.taxonomy_term.user.field_profile_pic_2
+    - taxonomy.vocabulary.user
+  module:
+    - media_library
+    - text
+id: taxonomy_term.user.default
+targetEntityType: taxonomy_term
+bundle: user
+mode: default
+content:
+  field_b:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_body1:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_body3:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_p:
+    type: media_library_widget
+    weight: 5
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_profile_pic:
+    type: media_library_widget
+    weight: 3
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_profile_pic_2:
+    type: media_library_widget
+    weight: 4
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  description: true
+  name: true
+  path: true

@@ -1,0 +1,33 @@
+uuid: 711f01bb-a680-4ff4-b267-c07520fdbe77
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools_block
+  theme:
+    - nerv
+id: relatedlinks
+theme: nerv
+region: content
+weight: 0
+provider: null
+plugin: 'entity_field:node:field_related_links'
+settings:
+  id: 'entity_field:node:field_related_links'
+  label: 'Related links'
+  provider: ctools_block
+  label_display: visible
+  formatter:
+    label: above
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility: {  }

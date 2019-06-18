@@ -1,0 +1,27 @@
+uuid: d1c573bd-8543-404c-8c19-e7dc74f9a7bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.user.body
+    - field.field.node.user.field_body3
+    - field.field.node.user.field_body_2
+    - field.field.node.user.field_profile
+    - field.field.node.user.field_profile_pic_2
+    - field.field.node.user.field_profile_pic_3
+    - node.type.user
+  module:
+    - user
+id: node.user.default
+targetEntityType: node
+bundle: user
+mode: default
+content: {  }
+hidden:
+  body: true
+  field_body3: true
+  field_body_2: true
+  field_profile: true
+  field_profile_pic_2: true
+  field_profile_pic_3: true
+  links: true

@@ -1,0 +1,5 @@
+# Schema for the configuration files of the nerv theme.
+
+nerv.settings:
+  type: theme_settings
+  label: 'nerv settings'

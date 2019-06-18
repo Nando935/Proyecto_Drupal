@@ -8,13 +8,17 @@ module:
   ckeditor: 0
   color: 0
   comment: 0
+  components: 0
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
+  ctools_block: 0
   datetime: 0
   dblog: 0
   default_content: 0
   default_content_deploy: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   entity_browser: 0
@@ -28,6 +32,8 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
+  kint: 0
+  layout_discovery: 0
   link: 0
   media: 0
   media_entity_browser: 0
@@ -37,12 +43,17 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  page_manager: 0
+  page_manager_ui: 0
+  panels: 0
   path: 0
   quickedit: 0
   rdf: 0
+  responsive_image: 0
   search: 0
   serialization: 0
   shortcut: 0
+  superfish: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -51,14 +62,19 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  ds: 1
+  fontyourface: 1
   menu_link_content: 1
+  fontsquirrel_api: 10
+  google_fonts_api: 10
   views: 10
-
 theme:
   stable: 0
   classy: 0
   bartik: 0
   seven: 0
+  radix: 0
+  nerv: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/nerv.style.css: {}
+  js:
+    assets/js/nerv.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

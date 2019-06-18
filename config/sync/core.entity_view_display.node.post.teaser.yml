@@ -5,10 +5,44 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.post.body
+    - field.field.node.post.comment
+    - field.field.node.post.field_categories1
+    - field.field.node.post.field_images
+    - field.field.node.post.field_key_words
+    - field.field.node.post.field_related_links
+    - image.style.medium
     - node.type.post
   module:
+    - ds
+    - media
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_3col_stacked
+      library: ds/ds_3col_stacked
+      disable_css: false
+      entity_classes: old_view_mode
+      settings:
+        wrappers:
+          header: div
+          left: div
+          middle: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      middle:
+        - body
+        - links
+      right:
+        - field_images
 id: node.post.teaser
 targetEntityType: node
 bundle: post
@@ -17,14 +51,29 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 0
     settings:
       trim_length: 600
     third_party_settings: {  }
-    region: content
+    region: middle
+  field_images:
+    type: media_thumbnail
+    weight: 2
+    region: right
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
   links:
-    weight: 100
+    weight: 1
+    region: middle
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  comment: true
+  field_categories1: true
+  field_key_words: true
+  field_related_links: true

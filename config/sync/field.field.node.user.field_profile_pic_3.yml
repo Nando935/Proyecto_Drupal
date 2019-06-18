@@ -1,0 +1,21 @@
+uuid: 4edfe458-3a2d-4730-bced-12f817913c4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_profile_pic_3
+    - node.type.user
+id: node.user.field_profile_pic_3
+field_name: field_profile_pic_3
+entity_type: node
+bundle: user
+label: 'Profile Pic 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

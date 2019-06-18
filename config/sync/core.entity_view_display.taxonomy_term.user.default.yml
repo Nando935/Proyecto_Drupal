@@ -1,0 +1,100 @@
+uuid: a4ffc73a-3838-404c-888f-5f17fdef4953
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.user.field_b
+    - field.field.taxonomy_term.user.field_body1
+    - field.field.taxonomy_term.user.field_body3
+    - field.field.taxonomy_term.user.field_p
+    - field.field.taxonomy_term.user.field_profile_pic
+    - field.field.taxonomy_term.user.field_profile_pic_2
+    - image.style.medium
+    - taxonomy.vocabulary.user
+  module:
+    - ds
+    - media
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_3col_equal_width
+      library: ds/ds_3col_equal_width
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          middle: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_profile_pic
+        - field_body1
+      middle:
+        - field_profile_pic_2
+        - field_b
+      right:
+        - field_p
+        - field_body3
+id: taxonomy_term.user.default
+targetEntityType: taxonomy_term
+bundle: user
+mode: default
+content:
+  field_b:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: middle
+  field_body1:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: left
+  field_body3:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: right
+  field_p:
+    type: media_thumbnail
+    weight: 4
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    region: right
+  field_profile_pic:
+    type: media_thumbnail
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    region: left
+  field_profile_pic_2:
+    type: media_thumbnail
+    weight: 2
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    region: middle
+hidden:
+  description: true

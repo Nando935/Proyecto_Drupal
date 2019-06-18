@@ -1,0 +1,80 @@
+.background{
+    background-color: black;
+    background-image: url("https://i.imgur.com/Zxo9ytD.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    /*background-color: aquamarine;*/
+}
+
+.footerbottom{
+    position: fixed;
+    bottom: 0;
+    background-color: transparent !important;
+    color:white;
+    a{
+        color: white;
+    }
+}
+.contenido{
+    a{
+        font-size: 1.5rem;
+        color:white !important;
+        font-weight: bolder;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+}
+
+.boton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    border-color: white;
+    color:white;
+    width: 20%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+    .boton{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 40%;
+        font-size: 12px;
+    }
+    .contenido{
+        a{
+            font-size: 16px;
+            color:white !important;
+            font-weight: bolder;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        h2{
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        img{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+  }

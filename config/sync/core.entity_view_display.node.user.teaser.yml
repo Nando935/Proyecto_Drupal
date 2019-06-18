@@ -1,0 +1,105 @@
+uuid: 675b34d2-ff85-4235-816b-ed3cf093dde3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.user.body
+    - field.field.node.user.field_body3
+    - field.field.node.user.field_body_2
+    - field.field.node.user.field_profile
+    - field.field.node.user.field_profile_pic_2
+    - field.field.node.user.field_profile_pic_3
+    - image.style.medium
+    - node.type.user
+  module:
+    - ds
+    - media
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_3col_equal_width
+      library: ds/ds_3col_equal_width
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          left: div
+          middle: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_profile
+        - body
+      middle:
+        - field_profile_pic_2
+        - field_body_2
+      right:
+        - field_profile_pic_3
+        - field_body3
+id: node.user.teaser
+targetEntityType: node
+bundle: user
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: left
+  field_body3:
+    type: text_trimmed
+    weight: 5
+    region: right
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_body_2:
+    type: text_trimmed
+    weight: 3
+    region: middle
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_profile:
+    type: media_thumbnail
+    weight: 0
+    region: left
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  field_profile_pic_2:
+    type: media_thumbnail
+    weight: 2
+    region: middle
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+  field_profile_pic_3:
+    type: media_thumbnail
+    weight: 4
+    region: right
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  links: true

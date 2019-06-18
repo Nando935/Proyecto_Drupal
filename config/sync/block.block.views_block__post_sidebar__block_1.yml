@@ -1,0 +1,32 @@
+uuid: 4bff52dc-da47-4af9-936c-31bb47875a6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.post_sidebar_
+  module:
+    - node
+    - views
+  theme:
+    - nerv
+id: views_block__post_sidebar__block_1
+theme: nerv
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:post_sidebar_-block_1'
+settings:
+  id: 'views_block:post_sidebar_-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      post: post
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

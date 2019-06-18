@@ -1,0 +1,25 @@
+uuid: 44b56774-bf88-4386-b93b-6e85e469ca27
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - nerv
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: nerv_branding
+theme: nerv
+region: navbar_branding
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

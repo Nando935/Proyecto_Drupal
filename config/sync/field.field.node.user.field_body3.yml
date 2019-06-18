@@ -1,0 +1,21 @@
+uuid: 4eb3e407-581a-4d3b-abaa-8d7adf677c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body3
+    - node.type.user
+  module:
+    - text
+id: node.user.field_body3
+field_name: field_body3
+entity_type: node
+bundle: user
+label: Body3
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

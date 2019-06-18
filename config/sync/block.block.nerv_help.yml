@@ -1,0 +1,22 @@
+uuid: da50349b-bb3a-481a-8bf5-3dcbb33000d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - nerv
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: nerv_help
+theme: nerv
+region: header
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

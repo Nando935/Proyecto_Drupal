@@ -1,0 +1,21 @@
+uuid: b347e718-093f-4ee2-89c1-cb13aad37d3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_body3
+    - taxonomy.vocabulary.user
+  module:
+    - text
+id: taxonomy_term.user.field_body3
+field_name: field_body3
+entity_type: taxonomy_term
+bundle: user
+label: Body3
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

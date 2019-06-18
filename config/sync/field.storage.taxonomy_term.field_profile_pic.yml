@@ -1,0 +1,20 @@
+uuid: 1b25dad7-43f0-4a1b-b5af-4ac257d8f2c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_profile_pic
+field_name: field_profile_pic
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
