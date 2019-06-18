@@ -1,28 +1,12 @@
-# Composer template for Drupal projects
 
-Este repositorio corresponde al proyecto final del curso Drupal 8. Tiene la intención de ser un sitio web en donde los usuarios puedan subir información relacionada con el CMS. (Aún esta en proceso)
-
-Los reponsables son: Valeria, Adolfo, Fernando
-
-#Clone
-
-git clone https://github.com/Nando935/Proyecto_Drupal.git
-
-#After cloning this project you should do the following 
-
-#Initiate containers:
-
-ddev start
-
-#Install dependencies:
-
-ddev composer install
-
-#Install site using existing config:
-
-ddev exec drush si --db-url=mysql://db:db@db/db --existing-config
-
-#Import default content:
-
-ddev exec drush dcdi
+    Clone the last release
+    Go to the project folder
+    ddev start
+    ddev composer install
+    In the folder config/sync modify the file core.extension.yml change the profile: standard a profile: minimal and delete the     line standard: 1000
+    If you have drush 9 ddev exec drush si --db-url=mysql://db:db@db/db --existing-config, or if you have drush 8 ddev exec drush si --db-url=mysql://db:db@db/db --config-dir=../config/sync
+    In the folder web/sites/default modify the file settings.php, at the end below $config_directories['sync'] = '../config/sync', add $settings['default_content_deploy_content_directory'] = '../content';
+    Import the configuration ddev exec drush cim -y
+    Import the content default ddev exec drush dcdi
+    Import the database ddev exec drush sqlc < fileDirectory
 
