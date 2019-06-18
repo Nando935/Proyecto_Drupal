@@ -27,7 +27,5 @@
 
     ddev exec drush dcdi
     
-*Import the database* 
 
-    ddev exec drush sqlc < fileDirectory
 
