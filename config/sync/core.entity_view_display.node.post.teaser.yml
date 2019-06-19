@@ -39,10 +39,17 @@ third_party_settings:
           layout_class: {  }
     regions:
       middle:
+        - node_title
         - body
         - links
       right:
         - field_images
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
 id: node.post.teaser
 targetEntityType: node
 bundle: post
@@ -51,14 +58,14 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 0
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: middle
   field_images:
     type: media_thumbnail
-    weight: 2
+    weight: 3
     region: right
     label: hidden
     settings:
@@ -68,7 +75,7 @@ content:
       ds:
         ds_limit: ''
   links:
-    weight: 1
+    weight: 2
     region: middle
     settings: {  }
     third_party_settings: {  }

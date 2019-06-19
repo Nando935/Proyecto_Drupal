@@ -323,6 +323,7 @@ display:
         title: 'All posts'
         menu_name: main
         weight: -49
+        enabled: false
     cache_metadata:
       max-age: -1
       contexts:
