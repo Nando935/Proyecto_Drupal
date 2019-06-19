@@ -14,13 +14,7 @@
         ],
         "http:\/\/drupal.org\/rest\/relation\/media\/image\/thumbnail": [
             {
-                "href": "http:\/\/default\/sites\/default\/files\/2019-06\/1523303172_Autumn%20Island.png.jpeg",
-                "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/image\/field_media_image": [
-            {
-                "href": "http:\/\/default\/sites\/default\/files\/2019-06\/1523303172_Autumn%20Island.png.jpeg",
+                "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png",
                 "lang": "en"
             }
         ]
@@ -53,7 +47,7 @@
     ],
     "revision_created": [
         {
-            "value": "2019-06-18T20:08:58+00:00",
+            "value": "2019-06-19T00:59:06+00:00",
             "format": "Y-m-d\\TH:i:sP"
         }
     ],
@@ -76,7 +70,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "d31a2f9e-7ec9-42bf-9639-9180d015f403"
+                        "value": "713aff37-11e6-4617-becd-0ecc19e5c405"
                     }
                 ],
                 "lang": "en"
@@ -86,7 +80,7 @@
             {
                 "_links": {
                     "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/2019-06\/1523303172_Autumn%20Island.png.jpeg"
+                        "href": "http:\/\/default\/sites\/default\/files\/media-icons\/generic\/no-thumbnail.png"
                     },
                     "type": {
                         "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
@@ -94,25 +88,7 @@
                 },
                 "uuid": [
                     {
-                        "value": "609eacf2-e205-4226-a5f1-4d89ab121424"
-                    }
-                ],
-                "lang": "en"
-            }
-        ],
-        "http:\/\/drupal.org\/rest\/relation\/media\/image\/field_media_image": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/2019-06\/1523303172_Autumn%20Island.png.jpeg"
-                    },
-                    "type": {
-                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "609eacf2-e205-4226-a5f1-4d89ab121424"
+                        "value": "8de92ec6-2925-4312-a86d-378fcca3f7ae"
                     }
                 ],
                 "lang": "en"
